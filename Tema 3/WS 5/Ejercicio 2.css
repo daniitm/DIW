@@ -1,0 +1,68 @@
+.offset { overflow: hidden; margin: 20px 0 40px 20px; }
+        
+.offset div {
+    background-color: #eee;
+    float:left;
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 65px;
+    width:160px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.examplelabelboxshadow {
+    color: #888;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.exampleboxshadowa {
+    box-shadow: -5px -5px 0px rgb(110, 110, 110);
+}
+
+.exampleboxshadowb {
+    box-shadow: -5px -5px 5px rgb(110, 110, 110);
+}
+
+.exampleboxshadowc {
+    box-shadow: -5px -5px 0px 5px rgb(110, 110, 110);
+}
+
+.exampleboxshadowd {
+    box-shadow: -5px -5px 5px 5px rgb(110, 110, 110);
+}
+
+.exampleboxshadowe {
+    box-shadow: 0px 0px 5px 0px rgb(110, 110, 110);
+}
+
+.exampleboxshadowf {
+    box-shadow: 0px 0px 5px 5px rgb(110, 110, 110);
+}
+
+.exampleboxshadowg {
+    box-shadow: 5px 5px 0px rgb(110, 110, 110);
+}
+
+.exampleboxshadowh {
+    box-shadow: 5px 5px 5px rgb(110, 110, 110);
+}
+
+.exampleboxshadowi {
+    box-shadow: 5px 5px 0px 5px rgb(110, 110, 110);
+}
+
+.exampleboxshadowj {
+    box-shadow: 5px 5px 5px 5px rgb(110, 110, 110);
+}
+
+.exampleboxshadowk {
+    box-shadow: 0px 0px 5px 0px rgb(110, 110, 110) inset;
+}
+
+.exampleboxshadowl {
+    box-shadow: 0px 0px 5px 5px rgb(110, 110, 110) inset;
+}

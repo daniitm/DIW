@@ -1,0 +1,84 @@
+<body>
+    <div id="abuelo">
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+            <div class="padre">
+                <div class="hijo">
+                    <a title="Título hijo1" target="_blank">HIJO1</a>
+                </div>
+                <div class="hijo">
+                    <a>HIJO2</a>
+                </div>
+                <div class="hijo">
+                    <a title="hijo3" target="_blank">HIJO3</a>
+                </div>
+            </div>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+            <div class="padre">
+                <div class="hijo">
+                    <a title="hijo4" target="_blank">HIJO4</a>
+                </div>
+                <div class="hijo">
+                    <a title="hijo5" target="_blank">HIJO5</a>
+                </div>
+                <div class="hijo">
+                    <a>HIJO6</a>
+                </div>
+            </div>
+        <p>Párrafo 5</p>
+        <p class="madre">Párrafo 6</p>
+        <p>Párrafo 7</p>
+            <div>Párrafo 8</div>
+        <p>Párrafo 9</p>
+    </div>
+</body>
+
+<style>
+    /* Todos los div tienen color de fondo gris claro */
+    div {
+        background-color: lightgray;
+    }
+
+    /* Todos los elementos a que están dentro de un div tienen color de fondo azul y texto blanco */
+    div a {
+        background-color: blue;
+        color: white;
+    }
+
+    /* Reglas específicas para los enlaces dentro de tres divs anidados */
+    div div div a {
+        background-color: red;
+        color: yellow;
+    }
+
+    /* Los elementos cuyo identificador es abuelo tendrán un borde azul de 1px */
+    #abuelo {
+        border: 2px solid blue;
+    }
+
+    /* Todos los div que son hijos directos de abuelo tendrán borde rojo de 2px */
+    #abuelo > div {
+        border: 2px solid red;
+    }
+
+    /* Párrafos adyacentes directos a .padre (párrafo3 y párrafo5) tendrán fondo verde lima */
+    .padre + p {
+        background-color: limegreen;
+    }
+
+    /* Párrafos adyacentes a .madre tendrán fondo rosa claro */
+    .madre + p {
+        background-color: lightpink;
+    }
+
+    /* Todos los enlaces que tienen atributo title tendrán fondo rojo */
+    a[title] {
+        background-color: red;
+    }
+
+    /* Todos los enlaces que NO tienen el atributo "target=_blank" tendrán fondo morado */
+    a:not([target="_blank"]) {
+        background-color: purple;
+    }
+</style>

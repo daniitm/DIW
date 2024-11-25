@@ -1,0 +1,25 @@
+/* Estilo del encabezado */
+h1 {
+    color: rgb(110, 0, 0); /* Encabezado de color rojo oscuro */
+    font-family: 'Arial', sans-serif; /* Fuente del encabezado */
+}
+
+/* Estilo para los títulos de los libros en la lista */
+#book-list li {
+    font-family: 'Helvetica', sans-serif; /* Fuente sin serifas para la lista */
+}
+
+/* Estilo de la lista desordenada con viñetas cuadradas */
+#square-bullet-list {
+    background-color: rgb(255, 255, 68); /* Fondo amarillo claro */
+}
+
+#square-bullet-list li {
+    background-color: rgb(165, 165, 165); /* Fondo gris para cada elemento */
+    list-style-type: square; /* Viñetas cuadradas */
+}
+
+/* Estilo de la lista desordenada con viñetas de imagen */
+#image-bullet-list li {
+    list-style-image: url('bullet-image.png'); /* Reemplaza con la ruta de tu imagen */
+}

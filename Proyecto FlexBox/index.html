@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Menu de Navegación -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Daniel Triviño</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre Mí</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <!-- Seccion Home -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <!-- Texto Principal -->
+      <div class="home-description">
+        <p class="greeting">Hola, soy</p>
+        <h1 class="name">Daniel Triviño Marín</h1>
+        <h2 class="profession">Y soy un<span> Desarrollador de aplicaciones web</span></h2>
+        <p class="intro">
+          Me dedico a combinar aspectos técnicos y creativos para diseñar, construir, implementar y mantener aplicaciones que funcionan a través de un navegador web.
+        </p>
+          <br>
+        <a href="https://github.com/daniitm/" target="_blank" class="btn-link">Mi Trabajo</a>
+      </div>
+      <!-- Imagen -->
+      <div class="home-image">
+        <img src="Imagenes/fotohome.png" alt="Laptop Illustration">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Seccion About Me -->
+  <section class="about" id="about">
+    <div class="about-title">
+      <h2>Sobre <span>Mí</span></h2>
+    </div>
+    <div class="about-container">
+      <!-- Imagen de perfil -->
+      <div class="about-image">
+        <img src="Imagenes/yo.png" alt="Profile Image">
+      </div>
+      <!-- Descripción -->
+      <div class="about-description">
+        <h3>Programador y diseñador de aplicaciones web</h3>
+        <p>
+          Soy un estudiante con una sólida formación académica, habiendo completado la educación secundaria obligatoria, el bachillerato y superado con éxito la prueba de acceso a la universidad.</p>
+        <!-- Contenedor para el texto que se va a expandir -->
+        <div class="more-text">
+          <p>Actualmente estoy cursando un ciclo superior de Desarrollo de Aplicaciones Web, donde estoy obteniendo conocimientos especializados en la programación, el diseño y el desarrollo de páginas web.</p>
+        </div>
+        <a href="javascript:void(0);" class="btn-read-more" onclick="toggleText()">Leer más...</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Seccion Services -->
+  <section class="services" id="services">
+    <div class="service-title">
+    <h2>Mis <span>Servicios</span></h2>
+    </div>
+    <div class="service-container">
+      <div class="service-box">
+        <i class="fa-solid fa-laptop"></i>
+        <h3>Desarrollo Web</h3>
+        <p>Creación de sitios y aplicaciones web funcionales y adaptables, optimizadas para un rendimiento y experiencia de usuario excepcionales.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-pen"></i>
+        <h3>Diseño Gráfico</h3>
+        <p>Elaboración de elementos visuales atractivos y personalizados que refuercen la identidad de marca, comunicando así los mensajes de forma efectiva.</p>
+      </div>
+      <div class="service-box">
+        <i class="fa-solid fa-lock"></i>
+        <h3>Seguridad</h3>
+        <p>Implementación de medidas para proteger aplicaciones web y datos frente a ciberataques, garantizando privacidad, integridad y seguridad.</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Sección Skills -->
+  <section class="skills" id="skills">
+    <div class="skill-title">
+      <h2>Mis <span>Habilidades</span></h2>
+    </div>
+    <div class="container-skills">
+      <div class="skill">
+        <span>HTML</span>
+        <div class="progress-bar-skills">
+          <div class="progress-skills" style="width: 80%;"></div>
+        </div>
+        <span class="percentage-skills">80%</span>
+      </div>
+      <div class="skill">
+        <span>CSS</span>
+        <div class="progress-bar-skills">
+          <div class="progress-skills" style="width: 75%;"></div>
+        </div>
+        <span class="percentage-skills">75%</span>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress-bar-skills">
+          <div class="progress-skills" style="width: 60%;"></div>
+        </div>
+        <span class="percentage-skills">60%</span>
+      </div>
+      <div class="skill">
+        <span>PHP</span>
+        <div class="progress-bar-skills">
+          <div class="progress-skills" style="width: 50%;"></div>
+        </div>
+        <span class="percentage-skills">50%</span>
+      </div>
+    </div>
+  </section>
+
+
+
+ <!-- Sección Portafolio -->
+<section class="portfolio" id="portfolio">
+  <div class="portfolio-title">
+    <h2>Mi <span>Portafolio</span></h2>
+  </div>
+  <div class="portfolio-container">
+    <div class="portfolio-box">
+      <a href="Proyectos/Proyecto1/Ejercicio 1.html" target="_blank">
+        <img src="Imagenes/Proyecto1.png" alt="Project 1">
+        <div class="overlay">STOPWATCH</div>
+      </a>
+    </div>
+    <div class="portfolio-box">
+      <a href="Proyectos/Proyecto2/Ejercicio 2.html" target="_blank">
+        <img src="Imagenes/Proyecto2.png" alt="Project 2">
+        <div class="overlay">HANGMAN</div>
+      </a>
+    </div>
+    <div class="portfolio-box">
+      <a href="Proyectos/Proyecto3/Ejercicio 3.html" target="_blank">
+        <img src="Imagenes/Proyecto3.png" alt="Project 3">
+        <div class="overlay">PAIRS GAME</div>
+      </a>
+    </div>
+    <div class="portfolio-box">
+      <a href="Proyectos/Proyecto4/Ejercicio pong.html" target="_blank">
+        <img src="Imagenes/Proyecto4.png" alt="Project 4">
+        <div class="overlay">PONG</div>
+      </a>
+    </div>
+    <div class="portfolio-box">
+      <a href="Proyectos/Proyecto5/Ejercicio 1.html" target="_blank">
+        <img src="Imagenes/Proyecto5.png" alt="Project 5">
+        <div class="overlay">GUESS THE COLOR</div>
+      </a>
+    </div>
+    <div class="portfolio-box">
+      <a href="Proyectos/Proyecto6/Ejercicio 2.html" target="_blank">
+        <img src="Imagenes/Proyecto6.png" alt="Project 6">
+        <div class="overlay">CALCULATOR</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Sección de Contacto -->
+  <section class="contact" id="contact">
+    <div class="contact-title">
+      <h2>Contacta <span>Conmigo</span></h2>
+    </div>
+    <div class="contact-container">
+      <!-- Información de contacto -->
+      <div class="contact-info">
+        <ul>
+          <li><strong>Teléfono:</strong> 670 920 410</li>
+          <li><strong>Gmail:</strong> DanielTrivino@gmail.com</li>
+          <li><strong>Dirección:</strong> Calle Sta. Clotilde, Granada, España</li>
+        </ul>
+      </div>
+      <!-- Formulario de contacto -->
+      <div class="contact-form">
+        <form action="#" method="post">
+          <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" name="name" placeholder="Escribe tu nombre completo" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+          </div>
+          <div class="form-group">
+              <label for="phone">Número de teléfono</label>
+              <input type="tel" id="phone" name="phone" pattern="^\d{9}$" placeholder="Escribe tu número de teléfono">
+          </div>
+          <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar</button>
+      </form>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+      <p>Daniel Triviño ©</p>
+    </div>
+  </footer>
+
+  <script src="funciones.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* Espaciado general */
+ol, ul {
+    margin-left: 20px; /* 20 píxeles desde el borde izquierdo */
+}
+
+/* Espaciado entre elementos de la lista */
+li {
+    margin-bottom: 10px; /* Separación de 10 píxeles entre los elementos */
+}
+
+/* Separación del encabezado con la lista */
+h1 {
+    text-align: center; /* Centrado del encabezado */
+    margin-bottom: 50px; /* 50 píxeles de espacio debajo del encabezado */
+}

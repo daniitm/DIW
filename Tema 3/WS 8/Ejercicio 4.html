@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+    }
+
+    .contenedor {
+      width: 100%;
+      max-width: 450px; 
+      padding: 5px;
+    }
+
+    .tarjeta {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .tarjeta-grande {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .fila-doble {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .tarjeta-pequena {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    .titulo {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .comentarios {
+      font-size: 0.85em;
+      color: #555;
+    }
+
+    .imagen {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 0.5rem;
+    }
+
+    .imagen-grande {
+      width: 100%;
+      height: 150px; 
+      object-fit: cover;
+    }
+
+    .imagen-pequena {
+      width: 100%;
+      height: 100%; 
+      aspect-ratio: 1 / 1; 
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <div class="tarjeta tarjeta-grande">
+      <img src="chill.png" alt="Imagen Grande" class="imagen imagen-grande">
+      <h2 class="titulo">Tristeza</h2>
+      <p class="comentarios">"Olho para a luz no canto, sempre acesa, sempre a mesma. Às vezes me pergunto se ela está brilhando apenas para mim ou se está brilhando para outra pessoa."</p>
+    </div>
+    <div class="fila-doble">
+      <div class="tarjeta tarjeta-pequena">
+        <img src="chill.png" alt="Imagen Pequeña 1" class="imagen imagen-pequena">
+        <h2 class="titulo">Solidão</h2>
+        <p class="comentarios">"Na solidão do pôr do sol, meu coração encontra espelhos, em seu reflexo, o nada, em meu reflexo, a ausência."</p>
+      </div>
+      <div class="tarjeta tarjeta-pequena">
+        <img src="chill.png" alt="Imagen Pequeña 2" class="imagen imagen-pequena">
+        <h2 class="titulo">Solidão</h2>
+        <p class="comentarios">"Na solidão do pôr do sol, meu coração encontra espelhos, em seu reflexo, o nada, em meu reflexo, a ausência."</p>
+      </div>
+    </div>
+    <div class="fila-doble">
+      <div class="tarjeta tarjeta-pequena">
+        <img src="chill.png" alt="Imagen Pequeña 3" class="imagen imagen-pequena">
+        <h2 class="titulo">Solidão</h2>
+        <p class="comentarios">"Na solidão do pôr do sol, meu coração encontra espelhos, em seu reflexo, o nada, em meu reflexo, a ausência."</p>
+      </div>
+      <div class="tarjeta tarjeta-pequena">
+        <img src="chill.png" alt="Imagen Pequeña 4" class="imagen imagen-pequena">
+        <h2 class="titulo">Solidão</h2>
+        <p class="comentarios">"Na solidão do pôr do sol, meu coração encontra espelhos, em seu reflexo, o nada, em meu reflexo, a ausência."</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

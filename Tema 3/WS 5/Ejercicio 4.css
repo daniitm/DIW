@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.centered-div {
+    width: 400px;
+    height: 200px;
+    margin: 50px;
+    background: linear-gradient(25deg, #ff0000, white 50%, #007bff);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
