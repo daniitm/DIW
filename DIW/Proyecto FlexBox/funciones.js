@@ -7,7 +7,7 @@ function toggleText() {
     const moreText = document.querySelector('.more-text');
    moreText.classList.toggle('open');
     
-   // Cambiar el texto del botón dependiendo de si el contenido está expandido o no
+   //Cambiar el texto del boton dependiendo de si el contenido está expandido o no
    const readMoreBtn = document.querySelector('.btn-read-more');
    if (moreText.classList.contains('open')) {
      readMoreBtn.textContent = "Leer menos";
