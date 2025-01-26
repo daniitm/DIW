@@ -103,7 +103,6 @@ body {
 }
 
 .hero {
-    background-image: url('https://source.unsplash.com/random/1920x1080/?fashion');
     background-size: cover;
     background-position: center;
     height: 100vh;
