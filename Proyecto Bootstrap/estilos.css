@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap"); 
+
+/* Estilos personalizados */
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --accent-color: #970000;
+    --text-color1: #ff0000;
+    --text-color2: #000000;
+    --light-gray: #e9ecef;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color1);
+    background-color: var(--secondary-color);
+}
+
+.navbar {
+    background-color: #000;
+    padding: 15px 0;
+}
+
+.title {
+    color: var(--text-color1);
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff !important;
+    margin-left: 180px;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: var(--text-color1) !important;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.form-control-navar {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 20px 0 0 20px;
+    height: 35px;
+    padding: .375rem .75rem;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+    opacity: 0.7;
+}
+
+.search-btn {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    border-left: none;
+    color: var(--primary-color);
+    border-radius: 0 20px 20px 0;
+    height: 35px;
+    padding: 0 15px;
+}
+
+.search-btn:hover {
+    border: 1px solid var(--text-color1);
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        order: -1;
+        margin: 0 auto;
+    }
+    
+    .nav-left, .nav-right {
+        flex-basis: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+.hero {
+    background-image: url('https://source.unsplash.com/random/1920x1080/?fashion');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: var(--text-color1);
+    border-color: var(--text-color1);
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.featured-products {
+    padding: 5rem 0;
+    background-color: var(--light-gray);
+}
+
+.featured-products h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    padding: 1.5rem;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.categories {
+    padding: 5rem 0;
+}
+
+.categories h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.category-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover .category-overlay {
+    opacity: 1;
+}
+
+.category-card:hover .category-image {
+    transform: scale(1.05);
+}
+
+.category-name {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-us {
+    padding: 5rem 0;
+    background-color: var(--light-gray);
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text-color2);
+}
+
+.testimonials {
+    padding: 5rem 0;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: var(--text-color2);
+}
+
+.testimonial-author {
+    font-weight: bold;
+}
+
+.newsletter {
+    padding: 5rem 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.newsletter h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.newsletter p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.newsletter-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 3rem 0;
+    font-size: x-small;
+}
+
+.footer-container {
+    max-width: 100%;
+    width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-right: 50px;
+    margin-left: 100px;
+}
+
+.footer-row::-webkit-scrollbar {
+    height: 5px;
+}
+
+.footer-row::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.footer-col {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 0 15px;
+}
+
+.footer h5 {
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--text-color1);
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: var(--text-color1);
+}
+
+.social-icons {
+    font-size: 1.5rem;
+}
+
+.social-icons a {
+    color: var(--text-color1);
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--accent-color);
+}
+
+@media (max-width: 1200px) {
+    .footer-row {
+        overflow-x: scroll;
+    }
+}
+
+.copyright {
+    background-color: darken(var(--primary-color), 5%);
+    color: var(--secondary-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.product-card {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.product-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}

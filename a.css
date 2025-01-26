@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap"); 
+
+:root{
+    --transparente: #00000055;
+    --titulo:'"Cuprum", serif';
+}
+
+body{
+    font-family: var(--fuente-titulo);
+}
+
+.nav-link:hover, .nav-link:hover {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 255, 0.25);
+}
+
+.hero{
+    background-image: url("chill.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1{
+    background-color: var(--transparente);
+    border-radius: 25px;
+}
+
+/* Contenedor para las tres secciones centradas */
+.section-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre las secciones */
+    margin-top: 50px;
+}
+
+.section {
+    width: 300px; /* Ancho de cada sección */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section img {
+    width: 100%; /* Ajustar la imagen al tamaño de la sección */
+    height: auto;
+    border-radius: 10px;
+}
+
+.section h5 {
+    margin-top: 15px;
+}
+
+.section p {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.section button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e99433;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.section button:hover {
+    background-color: #b66a14;
+}
