@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegancia Urbana - Tu Tienda de Moda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-nav nav-left">
+                <a class="nav-link" href="#menu"><i class="fas fa-bars"></i></a>
+                <a class="nav-link" href="#hombre">HOMBRE</a>
+                <a class="nav-link" href="#mujer">MUJER</a>
+            </div>
+            <a class="navbar-brand" href="#">Urban Pulse</a>
+            <div class="navbar-nav nav-right">
+                <form class="d-flex search-form">
+                    <input class="form-control-navar" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn search-btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <a class="nav-link" href="#usuario"><i class="fas fa-user"></i></a>
+                <a class="nav-link" href="#cesta"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="img/videobootstrap.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Descubre tu estilo en <h0 class="title">Urban Pulse</h0></h1>
+            <p>La mejor selección de moda urbana para expresar tu personalidad</p>
+            <a href="#productos" class="btn btn-primary btn-lg">Ver Colección</a>
+        </div>
+    </section>
+
+    <!-- Productos Destacados Carrusel -->
+    <section id="productos" class="featured-products">
+        <div class="container">
+            <h2>TE PUEDE INTERESAR</h2>
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('img/ropa1.png');"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Camiseta de punto calado Regular Fit</h3>
+                                <p class="product-price">24,99 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('img/ropa2.png');"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Sudadera con media cremallera Loose Fit</h3>
+                                <p class="product-price">37,99 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('img/ropa3.png');"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Pantalón de chándal Loose Fit</h3>
+                                <p class="product-price">19,99 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('img/ropa4.png');"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Polo en punto calado Regular Fit</h3>
+                                <p class="product-price">32,99 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('img/ropa5.png');"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Purl-knit boat-neck jumper</h3>
+                                <p class="product-price">17,99 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('img/ropa6.png');"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Chaqueta de béisbol con motivo</h3>
+                                <p class="product-price">39,99 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('img/ropa7.png');"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Wide High Jeans</h3>
+                                <p class="product-price">29,99 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('img/ropa8.png');"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Pendientes con colgantes de distinto diseño</h3>
+                                <p class="product-price">19,99 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('img/ropa9.png');"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Salones destalonados de piel</h3>
+                                <p class="product-price">74,99 €</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section id="categorias" class="categories">
+        <div class="container">
+            <h2>EXPLORA NUESTRAS CATEGORÍAS</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <div class="category-image" style="background-image: url('img/hombrebootstrap.png');"></div>
+                        <div class="category-overlay">
+                            <h3 class="category-name">Hombre</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <div class="category-image" style="background-image: url('img/mujerbootstrap.png');"></div>
+                        <div class="category-overlay">
+                            <h3 class="category-name">Mujer</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <div class="category-image" style="background-image: url('img/accesoriobootstrap.png');"></div>
+                        <div class="category-overlay">
+                            <h3 class="category-name">Accesorios</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>SOBRE URBAN PULSE</h2>
+                    <p>En Urban Pulse, creemos que la moda es una forma de expresión personal. Nuestra misión es proporcionar prendas de alta calidad y diseño innovador que te permitan mostrar tu estilo único en cada ocasión.</p>
+                <p>Fundada en 2024, nuestra marca ha crecido rápidamente gracias a nuestra dedicación a la calidad, la sostenibilidad y el servicio al cliente excepcional. Nos enorgullece ofrecer una amplia gama de opciones para hombres y mujeres que buscan destacar con elegancia en el entorno urbano.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/acercanosotrosbootstrap.png" alt="Nuestra tienda" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonios -->
+<section class="testimonials">
+    <div class="container">
+        <h2>LO QUE DICEN NUESTROS CLIENTES</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Urban Pulse ha transformado mi armario de manera radical. Sus prendas son de excelente calidad y siempre las uso para salir.</p>
+                    <p class="testimonial-author"><i class="fa fa-user-circle"></i> María G.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Increíble selección de street wear. El servicio al cliente es excepcional y las entregas siempre llegan a tiempo.</p>
+                    <p class="testimonial-author"><i class="fa fa-user-circle"></i> Carlos R.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Me encanta la combinación de estilo y comodidad que ofrecen. Definitivamente mi tienda favorita para moda underground.</p>
+                    <p class="testimonial-author"><i class="fa fa-user-circle"></i> Laura M.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Suscripción al boletín -->
+<section class="newsletter">
+    <div class="container">
+        <h2>Mantente al día con las últimas tendencias</h2>
+        <p>¡Prepárate para descubrir todas las tendencias, colabs y promociones exclusivas!</p>
+        <form class="newsletter-form">
+            <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico" required>
+                <button class="btn btn-primary" type="submit">Suscribirse</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section><div class="container"><hr style="color: #000; margin-top: 20px;"></div></section>
+
+<!-- Pie de página -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h5>¿Necesitas ayuda?</h5>
+                <ul>
+                    <li><a href="#whatsapp">Nuestro WhatsApp</a></li>
+                    <li><a href="#llamar">Llamar 612 34 56 78</a></li>
+                    <li><a href="#email">info@urbanpulse.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Ayuda</h5>
+                <ul>
+                    <li><a href="#compraonline">Compra Online</a></li>
+                    <li><a href="#pago">Pago</a></li>
+                    <li><a href="#categorias">Envío</a></li>
+                    <li><a href="#devoluciones">Devoluciones</a></li>
+                    <li><a href="#tarjetaregalo">Tarjeta Regalo</a></li>
+                    <li><a href="#ticketregalo">Ticket Regalo</a></li>
+                    <li><a href="#buscarticketdetienda">Buscar ticket de tienda</a></li>
+                    <li><a href="#compracomoinvitado">Compra como invitado</a></li>
+                    <li><a href="#ticketelectronico">Ticket Electrónico</a></li>
+                    <li><a href="#solicitarfactura">Solicitar factura</a></li>
+                    <li><a href="#dardebajamisuscripcion">Dar de baja mi suscripción</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>We are Urban Pulse</h5>
+                <ul>
+                    <li><a href="#sobrenosotros">Sobre nosotros</a></li>
+                    <li><a href="#sostenibilidad">Sostenibilidad</a></li>
+                    <li><a href="#trabajaconnosotros">Trabaja con nosotros</a></li>
+                    <li><a href="#affinitycard">Affinity card</a></li>
+                    <li><a href="#prensa">Prensa</a></li>
+                    <li><a href="#nuestrastiendas">Nuestras tiendas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Te puede interesar</h5>
+                <ul>
+                    <li><a href="#ropa1">Cazadoras mujer</a></li>
+                    <li><a href="#ropa2">Vestidos mujer</a></li>
+                    <li><a href="#ropa3">Tops y bodies mujer</a></li>
+                    <li><a href="#ropa4">Jeans mujer</a></li>
+                    <li><a href="#ropa5">Pantalones mujer</a></li>
+                    <li><a href="#ropa6">Camisetas mujer</a></li>
+                    <li><a href="#ropa7">Sudaderas mujer</a></li>
+                    <li><a href="#ropa8">Pantalones hombre</a></li>
+                    <li><a href="#ropa9">Camisetas hombre</a></li>
+                    <li><a href="#ropa10">Sudaderas hombre</a></li>
+                    <li><a href="#ropa11">Jerseis hombre</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Nuestras redes sociales</h5>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <br><br>
+                <h5>Métodos de pago</h5>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
+                    <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
+                    <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-wallet"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="color: #000; margin-top: 20px;">
+    <div class="footer-row">
+        <div class="footer-col">
+            <a href="#preferenciasdecookies">Preferencias de cookies</a>
+        </div>
+        <div class="footer-col">
+            <a href="#politicadeprivacidad">Política de privacidad</a>
+        </div>
+        <div class="footer-col">
+            <a href="#condicionesdecompra">Condiciones de compra</a>
+        </div>  
+        <div class="footer-col">    
+            <a href="#urbanpulsecommunity">Urban Pulse Community</a>
+        </div>
+        <div class="footer-col">
+            <a href="#localicacioneidioma">España | Español</a>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
